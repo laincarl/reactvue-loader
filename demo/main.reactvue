@@ -1,0 +1,22 @@
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+class main extends Component {
+  render() {
+    return (
+      <div>
+          ss
+      </div>
+    );
+  }
+}
+
+main.propTypes = {
+
+};
+<style>
+  body {
+    color:red;
+}
+</style>
+export default main;
