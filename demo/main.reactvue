@@ -1,23 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-class main extends Component {
-  render() {
-    return (
-      <div>
-          ss
-      </div>
-    );
-  }
+function App() {
+  return <div>react</div>
 }
-
-main.propTypes = {
-
-};
-
-export default main;
+ReactDOM.render(<App />, document.getElementById('root'));
 <style>
   body {
-    color:red;
+  color: red;
 }
 </style>
