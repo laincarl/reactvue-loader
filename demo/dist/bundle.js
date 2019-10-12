@@ -104,7 +104,7 @@ eval("__webpack_require__(/*! ./main.reactvue */ \"./demo/main.reactvue\");\n\n/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("content\n\n//# sourceURL=webpack:///./demo/main.reactvue?");
+eval("throw new Error(\"Module build failed (from ./lib/index.js):\\nError: Cannot find module 'style-loader/addStyles'\\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:636:15)\\n    at Function.resolve (D:\\\\Desktop\\\\todo\\\\reactvue-loader\\\\node_modules\\\\v8-compile-cache\\\\v8-compile-cache.js:166:23)\\n    at Object.module.exports (D:\\\\Desktop\\\\todo\\\\reactvue-loader\\\\lib\\\\index.js:16:52)\");\n\n//# sourceURL=webpack:///./demo/main.reactvue?");
 
 /***/ })
 

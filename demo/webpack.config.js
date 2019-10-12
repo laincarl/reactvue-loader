@@ -22,8 +22,8 @@ module.exports = {
       // example to apply loader to a custom block without lang="xxx"
       // this rule applies to <foo> blocks
       {
-        resourceQuery: /blockType=foo/,
-        loader: 'babel-loader'
+        resourceQuery: /reactvue/,
+        loader: 'reactvue-loader'
       },
       // example configuring CSS Modules
       {

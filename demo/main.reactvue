@@ -14,9 +14,10 @@ class main extends Component {
 main.propTypes = {
 
 };
+
+export default main;
 <style>
   body {
     color:red;
 }
 </style>
-export default main;
