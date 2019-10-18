@@ -5,7 +5,7 @@ function App() {
   return <div>react</div>
 }
 ReactDOM.render(<App />, document.getElementById('root'));
-<style>
+<style lang="scss">
   body {
   color: red;
 }

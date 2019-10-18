@@ -1,5 +1,6 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ReactVueLoaderPlugin = require('../lib/plugin')
 
 module.exports = {
   mode: 'development',
@@ -30,14 +31,14 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: [{
-          loader: 'babel-loader',          
+          loader: 'babel-loader',
         }
         ],
       },
       // example configuring CSS Modules
       {
         test: /\.css$/,
-        oneOf: [ 
+        oneOf: [
           {
             use: [
               'style-loader',
@@ -50,7 +51,7 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'vue-style-loader',
+          'style-loader',
           'css-loader',
           {
             loader: 'sass-loader',
@@ -70,10 +71,7 @@ module.exports = {
     }
   },
   plugins: [
-    // new ExtractTextPlugin('styles.css'),
-    // new webpack.DefinePlugin({
-    //  'process.env.BUILD_TIME': JSON.stringify(moment().format('YYYY-MM-DD HH:mm:ss')),
-    // }),
+    new ReactVueLoaderPlugin(),
     new HtmlWebpackPlugin({
       title: '首页',
       inject: true,
@@ -84,7 +82,7 @@ module.exports = {
         removeTagWhitespace: true,
         removeEmptyAttributes: true,
         removeStyleLinkTypeAttributes: true,
-      },      
+      },
       template: path.resolve(__dirname, 'index.ejs'), // Load a custom template (ejs by default see the FAQ for details)
     }),
   ],
