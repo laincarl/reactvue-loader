@@ -58,7 +58,7 @@ module.exports = {
             // global data for all components
             // this can be read from a scss file
             options: {
-              data: '$color: red;'
+              prependData: '$color: red;'
             }
           }
         ]

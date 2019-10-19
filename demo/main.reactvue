@@ -7,6 +7,6 @@ function App() {
 ReactDOM.render(<App />, document.getElementById('root'));
 <style lang="scss">
   body {
-  color: red;
+  color: $color;
 }
 </style>
